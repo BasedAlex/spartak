@@ -1,0 +1,23 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "ignorePatterns": ["tailwind.config.js", "/tailwind.config.js/*.js", "index.css"],
+  "rules": { "react/prop-types": "off", "@typescript-eslint/no-non-null-assertion": "off" }
+}
