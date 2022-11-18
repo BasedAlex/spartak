@@ -1,6 +1,7 @@
 import React from 'react';
 import guardPic from '../assets/images/guardPic.png';
 import playerNum from '../assets/images/99.svg';
+import { Slider } from './Slider';
 
 // import { Slider } from './Slider';
 
@@ -45,10 +46,10 @@ const data = [
 
 const TeamCard = () => {
   return (
-    <div className="flex flex-row justify-between mx-16 mt-6">
+    <div className=" flex flex-row justify-between mx-16 mt-6 xxs:gap-x-20">
       {data.map((item, idX) => {
         return (
-          <div key={idX} className="border border-neutral-800 pt-5 px-5 w-88">
+          <div key={idX} className="border  border-neutral-800 pt-5 px-5 w-1/5 xxs:w-1/2">
             <div className="flex justify-between ">
               <div className=" w-60 m-0 ">
                 <h3 className="text-white text-lg	">{item.lastName}</h3>

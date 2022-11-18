@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <img src={League} className="w-full" />
+        {/* <img src={League} className="w-full " /> */}
         {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Main />} />

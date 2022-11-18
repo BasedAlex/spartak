@@ -38,10 +38,10 @@ const data = [
 
 const AdminCard = () => {
   return (
-    <div className="flex flex-row justify-between mt-6">
+    <div className="flex flex-row justify-between mt-6 xxs:gap-x-20">
       {data.map((item, idX) => {
         return (
-          <div key={idX} className="border border-neutral-800 pt-5 px-5 vector-bg w-88">
+          <div key={idX} className="border border-neutral-800 pt-5 px-5 vector-bg w-1/5 xxs:w-1/2">
             <div className="w-60 m-0 ">
               <h3 className="text-white text-lg	">{item.lastName}</h3>
               <h3 className="text-neutral-500 text-lg	">{item.firstName}</h3>

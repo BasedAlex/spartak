@@ -1,5 +1,13 @@
 import React from 'react';
+import { useContext } from 'react';
+import { SliderContext } from './Slider-Context';
 
 export const Page = ({ children }) => {
-  return <div className="h-full">{children}</div>;
+  const { width } = useContext(SliderContext);
+
+  return (
+    <div className="h-full" style={{ minWidth: `${width}px`, maxWidth: `${width}px` }}>
+      {children}
+    </div>
+  );
 };

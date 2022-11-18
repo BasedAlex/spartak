@@ -1,4 +1,7 @@
 @tailwind base;
+html {
+  scroll-behavior: smooth;
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -10,9 +13,11 @@
     @apply bg-main-picture bg-no-repeat bg-center bg-cover;
   }
   .partnership-bg {
-    @apply bg-partnership bg-red-600 bg-no-repeat bg-center bg-cover bg-origin-border
+    @apply bg-partnership bg-red-600 bg-no-repeat bg-center bg-cover bg-origin-border h-full;
+  }
 
- h-full;
+  .team-profile-bg {
+    @apply bg-team-profile bg-no-repeat bg-cover;
   }
 
   .griden-2xl {

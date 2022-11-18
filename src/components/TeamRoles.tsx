@@ -15,7 +15,7 @@ const data = [
 
 const TeamRoles = () => {
   return (
-    <div className="flex mt-6 gap-x-2.5 mx-16">
+    <div className="flex mt-6 gap-x-2.5 mx-16 2xl:w-auto 2xl:max-w-fit	">
       {data.map((item, idX) => {
         return (
           <button
