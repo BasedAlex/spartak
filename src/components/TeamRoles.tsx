@@ -1,6 +1,4 @@
 import React from 'react';
-import guardPic from '../assets/images/guardPic.png';
-import playerNum from '../assets/images/99.svg';
 
 // import { Slider } from './Slider';
 

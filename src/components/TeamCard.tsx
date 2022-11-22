@@ -1,7 +1,6 @@
 import React from 'react';
 import guardPic from '../assets/images/guardPic.png';
 import playerNum from '../assets/images/99.svg';
-import { Slider } from './Slider';
 
 // import { Slider } from './Slider';
 
@@ -43,9 +42,6 @@ const data = [
     role: 'Guard',
   },
 ];
-
-// xl:w-1/5 xxs:w-5/6
-// xxs:min-w-min ms:min-w-10/12 xl:min-w-8/12
 
 const TeamCard = () => {
   return (
