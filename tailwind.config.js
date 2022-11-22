@@ -84,6 +84,7 @@ module.exports = {
         300: '75rem',
       },
       width: {
+        68: '1rem',
         88: '22rem',
         92: '23rem',
         96: '24rem',
@@ -119,6 +120,9 @@ module.exports = {
         292: '73rem',
         296: '74rem',
         300: '75rem',
+        336: '84rem',
+        340: '85rem',
+        480: '120rem',
       },
       margin: {
         0.25: '0.063rem',
@@ -167,7 +171,7 @@ module.exports = {
     screens: {
       test: '1px',
       ms: '540px',
-      xxs: '1px',
+      xxs: '340px',
       xs: '1px',
       sm: '768px',
       md: '1040px',

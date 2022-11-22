@@ -21,7 +21,7 @@ function Navbar() {
         <img src={League} className="w-full " />
         <div className={`flex justify-center	items-center `}>
           <div className="basis-5/12 justify-self-center	self-center ">
-            <div className="flex justify-start ml-12 gap-x-8 border-b border-zinc-600	h-20 text-white sm:h-16">
+            <div className="flex justify-start ml-12 2xl:ml-72 sm:ml-16 test:ml-6 gap-x-8 border-b border-zinc-600	h-20 text-white sm:h-16">
               <Link
                 to="/"
                 className="self-center 2xl:block xl:block lg:block sm:hidden test:hidden "

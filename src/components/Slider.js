@@ -7,8 +7,6 @@ import arrowRight from '../../src/assets/images/StrokeRightArrow.svg';
 import { Page } from './Page';
 import { SliderContext } from './Slider-Context.js';
 
-// const PAGE_WIDTH = 512;
-
 const PAGE_WIDTH = 512;
 
 export const Slider = ({ children }) => {
@@ -30,20 +28,6 @@ export const Slider = ({ children }) => {
       window.removeEventListener('resize', resizeHandler);
     };
   }, []);
-
-  // const handleLeft = () => {
-  //   setOffset((currentOffset) => {
-  //     const newOffset = currentOffset + PAGE_WIDTH;
-  //     return Math.min(newOffset, 0);
-  //   });
-  // };
-  // const handleRight = () => {
-  //   setOffset((currentOffset) => {
-  //     const newOffset = currentOffset - PAGE_WIDTH;
-  //     const maxOffset = -(PAGE_WIDTH * (pages.length - 3));
-  //     return Math.max(newOffset, maxOffset);
-  //   });
-  // };
 
   const handleLeft = () => {
     setOffset((currentOffset) => {

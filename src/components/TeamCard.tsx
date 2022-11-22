@@ -44,24 +44,30 @@ const data = [
   },
 ];
 
+// xl:w-1/5 xxs:w-5/6
+// xxs:min-w-min ms:min-w-10/12 xl:min-w-8/12
+
 const TeamCard = () => {
   return (
-    <div className=" flex flex-row justify-between mx-16 mt-6 xxs:gap-x-20">
+    <div className=" flex flex-row justify-between xl:mx-16 sm:mx-10 xxs:mx-8 mt-6 xxs:gap-x-8">
       {data.map((item, idX) => {
         return (
-          <div key={idX} className="border  border-neutral-800 pt-5 px-5 w-1/5 xxs:w-1/2">
-            <div className="flex justify-between ">
-              <div className=" w-60 m-0 ">
-                <h3 className="text-white text-lg	">{item.lastName}</h3>
+          <div key={idX} className="border  border-neutral-800 pt-5 px-5  w-72  min-w-fit">
+            <div className="flex justify-between w-4/6">
+              <div className=" xl:w-60 xxs:w-60  m-0  ">
+                <h3 className="text-white text-lg">{item.lastName}</h3>
                 <h3 className="text-neutral-500 text-lg	">{item.firstName}</h3>
-                <h3 className="text-neutral-500 text-lg">{item.patronymic}</h3>
+                <h3 className="text-neutral-500 text-lg ">{item.patronymic}</h3>
               </div>
-              <img src={item.playerNumber} className="m-0 w-28 h-20" />
+              <img
+                src={item.playerNumber}
+                className="m-0 xl:w-28 ms:w-3/6 ml-20 xxs:w-4/6 h-20 xxs:h-1/3"
+              />
             </div>
-            <div className="text-neutral-500 border border-neutral-800 px-1.5 w-fit mt-2.5">
+            <div className="text-neutral-500 border border-neutral-800 px-1.5 xl:text-lg xxs:text-sm w-fit mt-2.5">
               {item.birthDate}
             </div>
-            <img src={item.playerPic} className="self-center mx-auto" />
+            <img src={item.playerPic} className="self-center mx-auto " />
           </div>
         );
       })}

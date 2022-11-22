@@ -75,12 +75,12 @@ const data = [
 
 const Card = () => {
   return (
-    <div className="grid-cols-3 justify-between mx-16 mt-6 gap-y-6 		">
+    <div className="grid-cols-3 justify-between sm:mx-16 test:mx-6 mt-6 gap-y-6 		">
       <Slider>
         {data.map((item, idX) => {
           return (
             <Slider.Page key={idX}>
-              <div className="border  w-full	 mr-4 ">
+              <div className="border  w-full 	 mr-4 ">
                 <div className="m-10 mb-0">
                   <div className="flex justify-between">
                     <h3 className="text-base font-bold">{item.date}</h3>

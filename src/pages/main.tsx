@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import flag from '../../src/assets/images/flag-ru.png';
-import arrowR from '../../src/assets/images/ArrowRight.svg';
+// import arrowR from '../../src/assets/images/ArrowRight.svg';
 import HMK from '../../src/assets/images/Himik.png';
 import SPK from '../../src/assets/images/SpartakKostroma.png';
 import TVR from '../../src/assets/images/Tver.png';
@@ -41,9 +41,9 @@ function main() {
           <Navbar />
         </div>
 
-        <div className="ml-20  w-2/3 sm:w-152 pb-80 mt-60 text-white ">
+        <div className="ml-20  w-2/3 sm:w-152 pb-80 mt-60 text-white 2xl:mx-72 sm:mx-16 test:mx-6">
           <img src={flag} className="w-16 h-9" />
-          <p className="2xl:text-5xl xl:text-4xl lg:text-3xl sm:text-5xl  text-start font-bold	">
+          <p className="2xl:text-4xl xl:text-4xl lg:text-3xl sm:text-5xl  w-full  text-start font-bold	">
             {'«Спартак»  — российский футбольний клуб из Костромы'}
           </p>
           <p className="text-base	pt-4">Основан в 1959 году</p>
@@ -51,7 +51,7 @@ function main() {
         </div>
       </section>
       <section className="mt-24 w-full ">
-        <div className="flex justify-between mx-16">
+        <div className="flex justify-between 2xl:mx-72 sm:mx-16 test:mx-6">
           <h3 className="text-2xl	font-bold ">СЕЗОН 2022-23</h3>
           <Link to="/" className="flex">
             <p className="text-sm font-bold text-neutral-500 2xl:w-28 self-center">ВСЕ МАТЧИ</p>
@@ -73,7 +73,7 @@ function main() {
         </div>
       </section>
       <section className="mt-36 mb-20 ">
-        <div className="flex justify-between sm:mx-16 test:mx-6">
+        <div className="flex justify-between 2xl:mx-72 sm:mx-16 test:mx-6">
           <h3 className=" text-2xl font-bold ">ТУРНИРНАЯ ТАБЛИЦА</h3>
           <Link to="/" className="flex jusitfy-">
             <p className="text-sm  font-bold text-neutral-500 2xl:w-44 self-center">
@@ -92,85 +92,98 @@ function main() {
             </div>
           </Link>
         </div>
-        <div>
-          <div className="grid 2xl:grid-cols-15 xl:grid-cols-15 xxs:grid-cols-12  2xl:mt-5 xl:mt-5 sm:mt-0 ms:mx-12 test:mx-6 h-20 border-b content-center	items-center ">
+        <div className="2xl:mx-72 sm:mx-16 test:mx-6">
+          <div className="grid xl:grid-cols-15 lg:grid-cols-12 sm:grid-cols-12 xxs:grid-cols-10   2xl:mt-5 xl:mt-5 sm:mt-0 ms:mx-12 test:mx-4 h-20 border-b content-center	items-center ">
             <div className="font-bold text-neutral-400">#</div>
-            <div className="font-bold text-neutral-400 col-start-2 col-end-6">КЛУБ</div>
+            <div className="font-bold text-neutral-400 sm:col-start-2 xxs:col-start-3 xxs:col-end-6">
+              КЛУБ
+            </div>
             <div className="font-bold text-neutral-400 justify-self-center">И</div>
             <div className="font-bold text-neutral-400 justify-self-center">В</div>
             <div className="font-bold text-neutral-400 justify-self-center">Н</div>
             <div className="font-bold text-neutral-400 justify-self-center">П</div>
-            <div className="font-bold text-neutral-400 justify-self-center col-start-10 col-end-12">
+            <div className="font-bold text-neutral-400 justify-self-center col-start-10 col-end-12 2xl:block sm:block xxs:hidden ">
               М
             </div>
             <div className="font-bold text-neutral-400 justify-self-center">О</div>
             <div></div>
             <div></div>
           </div>
-          <div className="grid 2xl:grid-cols-15 xl:grid-cols-15 lg:grid-cols-12 xxs:grid-cols-12  ms:mx-12 test:mx-6 h-20 content-center items-center ">
+          <div className="grid  xl:grid-cols-15 lg:grid-cols-12 sm:grid-cols-12 xxs:grid-cols-10  ms:mx-12 test:mx-4 h-20 content-center items-center ">
             <div className="flex justify-between	items-center">
               <div className="justify-self-start w-10">6</div>
-              <img src={HMK} className="w-12 h-12 place-self-center	mr-6" />
+              <img src={HMK} className="w-12 h-12 place-self-center	ms:ml-6 xxs:ml-4 sm:ml-1 mr-6" />
             </div>
 
-            <div className="col-start-2 col-end-6">ХИМИК</div>
+            <div className="sm:col-start-2 xxs:col-start-3 xxs:col-end-6">ХИМИК</div>
             <div className="justify-self-center">5</div>
             <div className="justify-self-center">2</div>
             <div className="justify-self-center">1</div>
             <div className="justify-self-center">2</div>
-            <div className="justify-self-center col-start-10 col-end-12">6-4 (-2)</div>
+            <div className="justify-self-center col-start-10 col-end-12 2xl:block sm:block xxs:hidden ">
+              6-4 (-2)
+            </div>
             <div className="justify-self-center">7</div>
             <div className="justify-self-end col-start-15 2xl:block xl:block lg:hidden xxs:hidden">
               В П В Н П _
             </div>
           </div>
-          <div className="grid 2xl:grid-cols-15 xl:grid-cols-15 lg:grid-cols-12  xxs:grid-cols-12   ms:mx-12 test:mx-6  h-20 content-center items-center ">
+          <div className="grid xl:grid-cols-15 lg:grid-cols-12 sm:grid-cols-12 xxs:grid-cols-10   ms:mx-12 test:mx-4  h-20 content-center items-center ">
             <div className="flex justify-between	items-center">
               <div className="justify-self-start w-10">7</div>
-              <img src={DNM} className="w-12 h-12 place-self-center	mr-6" />
+              <img src={DNM} className="w-12 h-12 place-self-center	ms:ml-6 xxs:ml-4 sm:ml-1 mr-6" />
             </div>
 
-            <div className="col-start-2 col-end-6">ДИНАМО ВОЛОГДА</div>
+            <div className="sm:col-start-2 xxs:col-start-3 xxs:col-end-6">ДИНАМО ВОЛОГДА</div>
             <div className="justify-self-center">5</div>
             <div className="justify-self-center">2</div>
             <div className="justify-self-center">1</div>
             <div className="justify-self-center">2</div>
-            <div className="justify-self-center col-start-10 col-end-12">6-4 (-2)</div>
+            <div className="justify-self-center col-start-10 col-end-12 2xl:block sm:block xxs:hidden ">
+              6-4 (-2)
+            </div>
             <div className="justify-self-center">7</div>
             <div className="justify-self-end col-start-15 2xl:block xl:block lg:hidden xxs:hidden">
               В
             </div>
           </div>
           <div className="bg-slate-200 font-bold">
-            <div className="grid 2xl:grid-cols-15 xl:grid-cols-15 xxs:grid-cols-12 ms:mx-12 test:mx-6 h-20 content-center items-center">
+            <div className="grid xl:grid-cols-15 lg:grid-cols-12 sm:grid-cols-12 xxs:grid-cols-10  ms:mx-12 test:mx-4 h-20 content-center items-center">
               <div className="flex justify-between	items-center">
                 <div className="justify-self-start w-10">8</div>
-                <img src={SPK} className="w-12 h-12 place-self-center	mr-6" />
+                <img
+                  src={SPK}
+                  className="w-12 h-12 place-self-center	ms:ml-6 xxs:ml-4 sm:ml-1 mr-6"
+                />
               </div>
-              <div className="col-start-2 col-end-6">СПАРТАК</div>
+              <div className=" sm:col-start-2 xxs:col-start-3 xxs:col-end-6">СПАРТАК</div>
               <div className="justify-self-center">5</div>
               <div className="justify-self-center">2</div>
               <div className="justify-self-center">1</div>
               <div className="justify-self-center">2</div>
-              <div className="justify-self-center col-start-10 col-end-12">6-4 (-2)</div>
+              <div className="justify-self-center sm:col-start-10 sm:col-end-12  2xl:block sm:block xxs:hidden ">
+                6-4 (-2)
+              </div>
               <div className="justify-self-center">7</div>
               <div className="justify-self-end col-start-15 2xl:block xl:block lg:hidden xxs:hidden">
                 В
               </div>
             </div>
           </div>
-          <div className="grid 2xl:grid-cols-15 xl:grid-cols-15 sm:grid-cols-12 xxs:grid-cols-12 ms:mx-12 test:mx-6 h-20 content-center items-center">
+          <div className="grid xl:grid-cols-15 lg:grid-cols-12 sm:grid-cols-12 xxs:grid-cols-10  ms:mx-12 test:mx-4 h-20 content-center items-center">
             <div className="flex justify-between	items-center">
               <div className="justify-self-start w-10">9</div>
-              <img src={TVR} className="w-12 h-12 place-self-center	mr-6" />
+              <img src={TVR} className="w-12 h-12 place-self-center	ms:ml-6 xxs:ml-4 sm:ml-1 mr-6" />
             </div>
 
-            <div className="col-start-2 col-end-6 ">ТВЕРЬ</div>
+            <div className="sm:col-start-2 xxs:col-start-3 xxs:col-end-6 ">ТВЕРЬ</div>
             <div className="justify-self-center">5</div>
             <div className="justify-self-center">2</div>
             <div className="justify-self-center">1</div>
             <div className="justify-self-center">2</div>
-            <div className="justify-self-center col-start-10 col-end-12">6-4 (-2)</div>
+            <div className="justify-self-center col-start-10 col-end-12 2xl:block sm:block xxs:hidden ">
+              6-4 (-2)
+            </div>
             <div className="justify-self-center">7</div>
             <div className="justify-self-end col-start-15 2xl:block xl:block lg:hidden xxs:hidden">
               В
@@ -180,7 +193,7 @@ function main() {
       </section>
       <section className="profileBg snap-always hover:snap-normal">
         <div className="h-240">
-          <img src={spartakStroke} className="absolute mt-80 right-0	h-36" />
+          <img src={spartakStroke} className="absolute mt-80 right-0 sm:-pr-40	h-36" />
           <img src={kostromaStroke} className="absolute mt-120 left-0	h-36" />
         </div>
       </section>
@@ -188,7 +201,7 @@ function main() {
         <div>
           <img
             src={spartakStrokeFull}
-            className=" 2xl:px-16 xl:px-16 lg:px-16 px-8 m-0 h-full 2xl:w-7/12 xl:w-2/3 lg:w-2/3 sm:w-10/12 xs:w-10/12"
+            className=" 2xl:px-72 xl:px-16 lg:px-16 px-8 m-0 h-full 2xl:w-7/12 xl:w-2/3 lg:w-2/3 sm:w-10/12 xs:w-10/12"
           />
           <img
             src={kostromaStrokeFull}
@@ -196,8 +209,8 @@ function main() {
           />
         </div>
         <div className="flex justify-between 2xl:h-80 xl:h-80 2xl:mx-16 xl:mx-16 lg:mx-16 mx-8 pb-20 border-b pt-12">
-          <div className="grid  justify-between">
-            <div className=" text-new text-xl	text-neutral-400	text-left	 2xl:w-3/6 xl:w-5/6 lg:w-9/12 sm:w-9/12 xs:w-10/12">
+          <div className="grid justify-between">
+            <div className=" text-new text-xl	text-neutral-400	text-left	 2xl:w-4/6 xl:w-5/6 lg:w-9/12 sm:w-9/12 xs:w-10/12">
               <b className="text-white font-normal">Основан в 1959 году,</b> но до 1959 года уже
               существовало три команды костромского «Спартака». <br />В 1960—2018 годах непрерывно
               принимал участие в соревнованиях команд мастеров (нелюбительских футбольных клубов).
@@ -231,7 +244,7 @@ function main() {
             className=" h-fit 2xl:w-full 2xl:pl-0 xl:pl-16 xl:w-8/12 2xl:block xl:block lg:block sm:hidden test:hidden"
           />
         </div>
-        <div className="flex justify-between mx-16 pt-20 fill-red-300">
+        <div className="flex justify-between xl:mx-16 sm:mx-10 xxs:mx-8 pt-20 fill-red-300">
           <h3 className="text-2xl	font-bold text-white ">КОМАНДА</h3>
           <Link to="/" className="flex">
             <p className="text-sm font-bold text-red-700 2xl:w-32 self-center ">ВСЯ КОМАНДА</p>
@@ -251,53 +264,64 @@ function main() {
         </div>
         <div className="sm:overflow-x-auto test:overflow-x-auto">
           <TeamRoles />
+        </div>
+
+        <div className="sm:overflow-x-auto test:overflow-x-auto">
           <TeamCard />
         </div>
-        <div className="mt-40 mx-16 test:overflow-x-auto">
-          <div className="text-2xl font-bold text-white">РУКОВОДСТВО</div>
-          <StaffCard />
+        <div>
+          <div className="mt-40 xl:mx-16 sm:mx-10 xxs:mx-8 text-2xl font-bold text-white">
+            РУКОВОДСТВО
+          </div>
+          <div className=" test:overflow-x-auto">
+            <StaffCard />
+          </div>
         </div>
-        <div className="mt-40 mx-16 test:overflow-x-auto">
-          <div className="text-2xl font-bold text-white">АДМИНИСТРАЦИЯ</div>
-          <AdminCard />
+        <div>
+          <div className="mt-40 xl:mx-16 sm:mx-10 xxs:mx-8 text-2xl font-bold text-white">
+            АДМИНИСТРАЦИЯ
+          </div>
+          <div className="test:overflow-x-auto">
+            <AdminCard />
+          </div>
         </div>
-        <div className="mt-40 mx-16">
+        <div className="mt-40 xl:mx-16 sm:mx-10 xxs:mx-8">
           <div className="text-2xl font-bold text-white">КОНТАКТЫ</div>
         </div>
         <div className="">
-          <div className="flex 2xl:flex-row xl:flex-row lg:flex-col xxs:flex-col md:flex-col justify-center mx-16 mt-10 pb-36">
+          <div className="flex 2xl:flex-row xl:flex-row lg:flex-col xxs:flex-col md:flex-col justify-center xl:mx-16 sm:mx-10 xxs:mx-8 mt-10 pb-36">
             <div className="w-1/2 2xl:w-1/2 xl:w1/2 lg:w-full sm:w-full md:w-full xxs:w-full">
-              <div className="bg-red-700 w-full pt-10 px-10 h-84">
+              <div className="bg-red-700 w-full sm:pt-10 xxs:pt-5 xl:px-10 sm:px-8 xxs:px-4 h-84">
                 <div className="">
                   <h3 className="text-white font-bold 2xl:w-152 xl:w-152 xxs:w-full text-xl">
                     ФУТБОЛЬНЫЙ КЛУБ СПАРТАК
                   </h3>
-                  <p className="text-white text-xl 2xl:w-152 xl:w-152 xxs:w-full">
+                  <p className="text-white  2xl:w-152 xl:w-152 xxs:w-full xl:text-xl sm:text-lg	xxs:text-md">
                     г. Кострома, учебный городок, 37, Караваево, <br /> Костромская обл., 156530
                   </p>
                 </div>
-                <div className="pt-10 pb-20">
+                <div className="sm:pt-10 xxs:pt-5 pb-20">
                   <h3 className="text-white font-bold 2xl:w-152 xl:w-152 xxs:w-full text-xl">
                     ДОМАШНИЙ СТАДИОН «УРОЖАЙ»
                   </h3>
-                  <p className="text-white 2xl:w-152 xl:w-152 xxs:w-full text-xl">
+                  <p className="text-white 2xl:w-152 xl:w-152 xxs:w-full xl:text-xl sm:text-lg	xxs:text-md">
                     Адрес: г. Кострома, учебный городок, 37, Караваево, Костромская обл., 156530
                   </p>
                 </div>
               </div>
               <div className="border-b border-l border-neutral-600 h-84">
-                <div className="pt-10 px-10">
+                <div className="sm:pt-10 xxs:pt-5 xl:px-10 sm:px-8 xxs:px-4">
                   <h3 className="text-white font-bold 2xl:w-152 xl:w-152 xxs:w-full text-xl">
                     СТАДИОН УРОЖАЙ
                   </h3>
-                  <p className="text-neutral-500 pt-2.51 2xl:w-152 xl:w-152 xxs:w-fulltext-xl	">
+                  <p className="text-neutral-500 pt-2.51 2xl:w-152 xl:w-152 xxs:w-full xl:text-xl sm:text-lg	xxs:text-md">
                     Футбольный клуб «Спартак» Кострома проводит домашние матчи в сезоне 2022/23 на
                     стадионе «Урожай».
                     <br />
                     Арена рассчитана на 3150 зрителей.
                   </p>
                 </div>
-                <button className="text-white text-base ml-10 mt-24 mb-10 px-4 w-36 h-12 border border-neutral-600">
+                <button className="text-white text-base ml-10 xl:mt-24 xxs:mt-10 mb-10 px-4 w-36 h-12 border border-neutral-600">
                   ПОДРОБНЕЕ
                 </button>
               </div>
@@ -312,10 +336,10 @@ function main() {
           </div>
         </div>
       </section>
-      <section className="mt-32 sm:mx-16 test:mx-6">
+      <section className="mt-32 xl:mx-16 sm:mx-10 xxs:mx-4 test:mx-2">
         <h3 className="font-bold text-2xl">ГЕНЕРАЛЬНЫЙ СПОНСОР</h3>
         <div className="bg-neutral-300 scbBg	flex mt-6">
-          <div className="2xl:w-1/2 xl:w-1/2 sm:w-full md:w-full lg:w-full xs:w-full  2xl:mt-14 xl:mt-14 lg:mt-8 md:mt-8 sm:mt-8 xs:mt-8 ms:ml-16 test:ml-4 2xl:mr-0 xl:mr-0 xxs:mr-16 2xl:text-black xl:text-black lg:text-white sm:text-white md:text-white xs:text-white">
+          <div className="2xl:w-1/2 xl:w-1/2 sm:w-full md:w-full lg:w-full xs:w-full  2xl:mt-14 xl:mt-14 lg:mt-8 md:mt-8 sm:mt-8 xs:mt-8  test:ml-4 2xl:mr-0 xl:mr-0 xxs:mr-16 sm:mx-8 ms:mr-8 ms:ml-8 2xl:text-black xl:text-black lg:text-white sm:text-white md:text-white xs:text-white">
             <h4 className="font-bold text-xl ">ПАО «Совкомбанк»</h4>
             <ul className="2xl:text-1.5xl xl:text-1.5xl sm:text-xl xxs:text-md mt-2.5 list-disc list-outside 2xl:w-4/5 xl:w-4/5 xxs:w-full">
               Совкомбанк — универсальный системно значимый банк федерального масштаба.
@@ -338,7 +362,7 @@ function main() {
                 Держателями карты «Халва» сегодня являются свыше 10 млн человек.
               </li>
             </ul>
-            <button className="text-white bg-red-700 font-bold text-xl mt-10 2xl:mb-20 xl:mb-20 lg:mb-16 sm:mb-12 md:mb-8 xs:mb-8 px-4 xl:w-72 test:w-full xl:h-16">
+            <button className="text-white bg-red-700 font-bold text-xl mt-10 2xl:mb-20 xl:mb-20 lg:mb-16 sm:mb-12 md:mb-8  xs:mb-8 px-4 py-4 xxs:w-72 2xl:w-72  test:w-11/12  xl:h-16">
               ОФИЦИАЛЬНЫЙ САЙТ
             </button>
           </div>
@@ -348,34 +372,38 @@ function main() {
           />
         </div>
       </section>
-      <section className="mt-36 mx-16 xxs:overflow-x-auto 	">
-        <h3 className="font-bold text-2xl ">НАШИ ПАРТНЁРЫ</h3>
-        <div className="test:overflow-x-auto">
-          <div className="flex flex-row justify-between pt-6 xxs:gap-x-20 xxs:overflow-x-auto">
-            <div className="flex w-1/5 xxs:w-1/2 h-40 border place-content-center">
-              <img className="place-self-center" src={sportmaster} />
-            </div>
+      <div className="font-bold     2xl:px-7 xxs:px-0 xl:mx-48 lg:mx-16 sm:mx-10 xxs:mx-8 text-2xl mt-36">
+        НАШИ ПАРТНЁРЫ
+      </div>
+      <section className=" mx-60 2xl:ml-16 xl:mx-auto lg:mx-16 sm:mx-10 xxs:mx-8 xxs:overflow-x-auto 	z-20 ">
+        <div className="xl:w-340 xxs:w-300 mx-auto ">
+          <div className="test:overflow-x-auto mx-auto">
+            <div className="flex justify-between flex-row gap-x-10 pt-6   xxs:overflow-x-auto ">
+              <div className="flex w-60  h-40 border place-content-center">
+                <img className="place-self-center" src={sportmaster} />
+              </div>
 
-            <div className="flex w-1/5 xxs:w-1/2 h-40 border place-content-center">
-              <img className="place-self-center" src={rfu} />
-            </div>
+              <div className="flex w-60  h-40 border place-content-center">
+                <img className="place-self-center" src={rfu} />
+              </div>
 
-            <div className="flex w-1/5 xxs:w-1/2  h-40 border place-content-center">
-              <img className="place-self-center" src={scblogo} />
-            </div>
+              <div className="flex w-60  h-40 border place-content-center">
+                <img className="place-self-center" src={scblogo} />
+              </div>
 
-            <div className="flex w-1/5 xxs:w-1/2  h-40 border place-content-center">
-              <img className="place-self-center " src={rfso} />
+              <div className="flex w-60 relative h-40 border place-content-center overflow-hidden	">
+                <img className="place-self-center " src={rfso} />
+                <button className="arrow absolute -right-2 z-30 py-16	2xl:block xl:block xs:hidden	">
+                  <img src={arrowRight} className="absolute  mt-3 ml-3.5" />
+                  <img src={strokeRight} className="z-30 w-10" />
+                </button>
+              </div>
             </div>
           </div>
-          <button className="arrow absolute right-12 z-30 py-16	2xl:block xl:block xs:hidden	">
-            <img src={arrowRight} className="absolute mt-3 ml-3.5" />
-            <img src={strokeRight} className="z-30 w-10" />
-          </button>
         </div>
       </section>
       <section className="partnership-bg my-36 xl:mx-16 xxs:mx-6">
-        <div className="2xl:flex xl:flex lg:flex md:flex sm:flex-row h-72 justify-between place-items-center xl:px-16 sm:px-10 xxs:px-4">
+        <div className="2xl:flex xl:flex lg:flex md:flex sm:flex-row xl:h-72 xxs:h-full justify-between place-items-center xl:px-16 sm:px-10 xxs:px-4">
           <div className="flex-row  w-5/12	xl:w-6/12 lg:w-6/12 sm:w-full xs:w-full">
             <h3 className="font-bold text-2xl text-white 2xl:pt-0 xl:pt-0 lg:pt-0 md:pt-0 sm:pt-8 xs:pt-6">
               СТАТЬ ПАРТНЁРОМ
@@ -419,7 +447,7 @@ function main() {
             </div>
           </div>
           <div className="flex flex-col w-64 xl:col-start-2 xl:row-start-1 xs:col-start-1 xs:row-start-2 xs:row-end-4 xl:pt-0 xxs:pt-12">
-            <h3 className="text-lg font-bold	text-white	text-left ">ФК СПАРТАК</h3>
+            <h3 className="text-lg font-bold	text-white	text-left">ФК СПАРТАК</h3>
             <Link to="/" className="text-lg	text-neutral-400	text-left pt-6">
               Новости
             </Link>
@@ -454,7 +482,7 @@ function main() {
               Контакты
             </Link>
           </div>
-          <div className="flex flex-col w-64 xl:col-start-3 xl:row-start-1 sm:col-start-2 sm:row-start-2 xs:col-start-1 xs:row-start-4 xxs:row-start-3 xl:pt-0 xxs:pt-12">
+          <div className="flex flex-col w-64 xl:col-start-3 xl:row-start-1 sm:col-start-2 sm:row-start-2 xs:col-start-1 xs:row-start-4  xl:pt-0 xxs:pt-12">
             <h3 className="text-lg font-bold	text-white	text-left">БИЛЕТЫ</h3>
             <Link to="/" className="text-lg	text-neutral-400	text-left pt-6">
               Расписание матчей
